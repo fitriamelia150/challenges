@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    .nav-links::after {
+      content: '';
+      position: absolute;
+      top: -25px;
+      right: 0px;
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 0px solid transparent;
+      border-bottom: 26px solid white;
+    }
+
+    .nav-links a {
+      @apply active:bg-primary-yellow active:text-slate-900 active:font-fraunces active:uppercase active:font-bold active:py-2 active:px-5 active:rounded-full
+    }
+  }

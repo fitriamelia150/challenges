@@ -1,0 +1,35 @@
+@import url('https://fonts.google.com/specimen/Raleway');
+@import url('https://fonts.google.com/specimen/Open+Sans');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .part-2-section {
+        @apply flex flex-col gap-3 items-center w-72
+    }
+
+    .part-2-section h1 {
+        @apply text-lg font-bold mt-5
+    }
+
+    .part-2-section p {
+        @apply text-sm text-center
+    }
+
+    .part-2-section img {
+        @apply w-20
+    }
+
+    .hover-link-menu {
+        @apply hover:underline hover:font-semibold
+    }
+
+    .hover-button {
+        @apply hover:bg-cyan-300
+    }
+
+    .icon-style {
+        @apply border-white border-[1px] rounded-full p-[0.25rem] flex justify-center items-center lg:w-8  lg:h-8
+    }
+}

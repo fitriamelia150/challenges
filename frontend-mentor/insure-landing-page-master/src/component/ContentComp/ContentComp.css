@@ -1,0 +1,79 @@
+
+
+.content {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.content .content-issue {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 50px;
+}
+
+/* 
+.content .content-issue .content-line {
+	width: 150px;
+	height: 2px;
+	background-color: hsl(256, 26%, 20%);
+}
+
+.content .content-issue .card {
+	display: flex;
+	flex-direction: row;
+	gap: 50px
+}
+
+.content .content-issue h1 {
+	font-size: 5rem;
+	text-transform: capitalize;
+}
+
+.content .content-issue .card .content-card h2 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+.content .content-issue .card .content-card p {
+	font-size: 1rem;
+	line-height: 2;
+	color: hsl(273, 4%, 51%);
+}
+
+.content .content-issue .card .content-card img {
+	width: 100px;
+	margin-bottom: 35px;
+}
+
+.content .content-slayer {
+	background-color: hsl(256, 26%, 20%);
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 100px;
+	position: relative;
+	margin-top: 200px;
+}
+
+.content .content-slayer h1{
+	font-size: 3.5rem;
+	width: 55%;
+}
+
+.content .content-slayer button {
+	z-index: 1;
+}
+
+.content .content-slayer img {
+	position: absolute;
+	
+	right: 0;
+	height: 320px;
+	transform: translate(0px, 0%);
+} */

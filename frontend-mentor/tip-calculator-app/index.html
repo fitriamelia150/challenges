@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section>
+    <header>
+      <img src="./images/logo.svg" alt="">
+    </header>
+
+    <main>
+      <form>
+        <div class="input-form">
+          <div class="bill">
+            <label for="bill">bill</label>
+            <input type="number" name="bill" id="bill" placeholder="0" onkeyup="countSplitBill()">
+          </div>
+    
+          <div class="tip">
+            <div class="tip-label">
+              <h1>select tip %</h1>
+            </div>
+  
+            <div class="tip-btn">
+              <input type="radio" name="tip" id="tip1" value="5" style="display: none;">
+              <label id="label-tip" for="tip1" onclick="clearCustomTip()">5%</label>
+              <input type="radio" name="tip" id="tip2" value="10" style="display: none;">
+              <label id="label-tip" for="tip2" onclick="clearCustomTip()">10%</label>
+              <input type="radio" name="tip" id="tip3" value="15" style="display: none;">
+              <label id="label-tip" for="tip3" onclick="clearCustomTip()">15%</label>
+              <input type="radio" name="tip" id="tip4" value="25" style="display: none;">
+              <label id="label-tip" for="tip4" onclick="clearCustomTip()">25%</label>
+              <input type="radio" name="tip" id="tip5" value="50" style="display: none;">
+              <label id="label-tip" for="tip5" onclick="clearCustomTip()">50%</label>
+              <input type="number" name="custom-tip" id="custom-tip" placeholder="Custom" onkeyup="changeTip()" value="">
+            </div>
+          </div>
+    
+          <div class="num-people">
+            <label for="num-people">number of people</label>
+            <input type="number" name="num-people" id="num-people" placeholder="0" oninput="countSplitBill()">
+            <span id="error"></span>
+          </div>
+        </div>
+      </form>
+
+      <div class="show-form">
+        <div class="tip-amount">
+          <div class="label">
+            <h1>tip amount</h1>
+            <h2>/ person</h2>
+          </div>
+          <div class="amount">
+            <p class="amount" id="label-tip-amount">$0.00</p>
+          </div>
+        </div>
+
+        <div class="total-amount">
+          <div class="label">
+            <h1>total</h1>
+            <h2>/ person</h2>
+          </div>
+          <div class="amount">
+            <p class="amount" id="label-total-amount">$0.00</p>
+          </div>
+        </div>
+
+        <button type="button" id="reset-btn" disabled onclick="reset()">reset</button>
+      </div>
+
+    </main>
+  </section>
+
+</body>
+<script src="./assets/js/index.js"></script>
+
+</html>

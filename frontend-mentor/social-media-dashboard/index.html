@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/css/style.css">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+</head>
+<body class=" flex flex-col justify-center items-center  dark:bg-Bg-Very-Dark-Blue  relative">
+  <!-- <div class=" md:hidden bg-pattern w-full h-52 bg-slate-400 absolute -z-0"></div> -->
+
+  <main class="w-full h-full p-5 mt-5 md:py-10 md:px-44 z-10 max-w-[1440px]">
+    <div class="header pb-5 mb-5 ">
+      <div class="title flex flex-col gap-5 mb-5">
+        <div class="">
+          <h1 class="font-bold text-[1.2rem] dark:text-Text-White">Social Media Dashboard</h1>
+          <p class="text-[0.7rem] font-semibold text-slate-500">Total Followers: 23,004</p>
+        </div>
+        <div class="w-full h-[0.1px] bg-Very-Pale-Blue dark:border-b-TopBgPattern-Very-Dark-Blue dark:opacity-10"></div>
+      </div>
+      <div class="toggle mb-5 flex justify-between">
+        <p class="text-[0.7rem] font-semibold text-slate-500">Dark Mode</p>
+  
+        <div id="btn-toggle" class="switch w-10 h-5  bg-toggle dark:bg-gradient-to-r from-toggle-grad-from to-toggle-grad-to rounded-xl flex justify-end items-center p-[2px]">
+          <div id="toggle-circle" class="w-4 h-4 bg-slate-100 dark:bg-Bg-Very-Dark-Blue rounded-xl"></div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="dashboard flex flex-col gap-5 justify-center items-center md:flex-row flex-wrap md:justify-between">
+      <div class="facebook  card-dashboard border-t-4 border-t-fb">
+        <div class="username">
+          <img src="./src/images/icon-facebook.svg" alt="facebook" class="icon">
+          <p class="username-label">@nathanf</p>
+        </div>
+        <div class="follower">
+          <p class="follower-count">1987</p>
+          <p class="follower-label">followers</p>
+        </div>
+        <div class="today">
+          <img src="./src/images/icon-up.svg" alt="icon-up">
+          <p class="today-label">12 Today</p>
+        </div>
+      </div>
+  
+      <div class="card-dashboard twitter border-t-4 border-t-tw">
+        <div class="username">
+          <img src="./src/images/icon-twitter.svg" alt="twitter" class="icon">
+          <p class="username-label">@nathanf</p>
+        </div>
+        <div class="follower">
+          <p class="follower-count">1044</p>
+          <p class="follower-label">follower</p>
+        </div>
+        <div class="today">
+          <img src="./src/images/icon-up.svg" alt="icon-up">
+          <p class="today-label">99 Today</p>
+        </div>
+      </div>
+  
+      <div class="card-dashboard instagram relative">
+        <div class="line-top w-full h-1 bg-gradient-to-r from-ig-from to-ig-to absolute translate-y-[-20px] box-border"></div>
+        <div class="username">
+          <img src="./src/images/icon-instagram.svg" alt="instagram" class="icon">
+          <p class="username-label">@realnathanf</p>
+        </div>
+        <div class="follower">
+          <p class="follower-count">11k</p>
+          <p class="follower-label">follower</p>
+        </div>
+        <div class="today">
+          <img src="./src/images/icon-up.svg" alt="icon-up">
+          <p class="today-label">1099 Today</p>
+        </div>
+      </div>
+  
+      <div class="card-dashboard youtube border-t-4 border-t-yt">
+        <div class="username">
+          <img src="./src/images/icon-youtube.svg" alt="youtube" class="icon">
+          <p class="username-label">Nathan F.</p>
+        </div>
+        <div class="follower">
+          <p class="follower-count">8239</p>
+          <p class="follower-label">Subscribers</p>
+        </div>
+        <div class="today">
+          <img src="./src/images/icon-down.svg" alt="icon-down">
+          <p class="today-label text text-red-600">144 Today</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="overview mt-10 flex flex-col gap-8">
+      <h1 class="font-semibold text-[1.2rem] text-Dark-Grayish-Blue">Overview - Today</h1>
+  
+      <div class="w-full flex flex-col gap-5 justify-center items-center md:flex-row flex-wrap md:justify-between">
+  
+        <div class="card">
+          <div class="card-label">
+            <p class="card-label-p">Page Views</p>
+            <img src="./src/images/icon-facebook.svg" alt="facebook" class="icon">
+          </div>
+          <div class="value">
+            <p class="value-label">87</p>
+            <div class="value-icon">
+              <img src="./src/images/icon-up.svg" alt="">
+              <p class="value-icon-label text-lime-green">3%</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card-label">
+            <p class="card-label-p">Likes</p>
+            <img src="./src/images/icon-facebook.svg" alt="facebook" class="icon">
+          </div>
+          <div class="value">
+            <p class="value-label">52</p>
+            <div class="value-icon">
+              <img src="./src/images/icon-down.svg" alt="">
+              <p class="value-icon-label text-red-500">2%</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card-label">
+            <p class="card-label-p">likes</p>
+            <img src="./src/images/icon-instagram.svg" alt="instagram" class="icon">
+          </div>
+          <div class="value">
+            <p class="value-label">5462</p>
+            <div class="value-icon">
+              <img src="./src/images/icon-up.svg" alt="">
+              <p class="value-icon-label text-lime-green">2257%</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card-label">
+            <p class="card-label-p">Profil Views</p>
+            <img src="./src/images/icon-instagram.svg" alt="instagram" class="icon">
+          </div>
+          <div class="value">
+            <p class="value-label">52k</p>
+            <div class="value-icon">
+              <img src="./src/images/icon-up.svg" alt="">
+              <p class="value-icon-label text-lime-green">1375%</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card-label">
+            <p class="card-label-p">Retweets</p>
+            <img src="./src/images/icon-twitter.svg" alt="twitter" class="icon">
+          </div>
+          <div class="value">
+            <p class="value-label">117</p>
+            <div class="value-icon">
+              <img src="./src/images/icon-up.svg" alt="">
+              <p class="value-icon-label text-lime-green">303%</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card-label">
+            <p class="card-label-p">Likes</p>
+            <img src="./src/images/icon-twitter.svg" alt="twitter" class="icon">
+          </div>
+          <div class="value">
+            <p class="value-label">507</p>
+            <div class="value-icon">
+              <img src="./src/images/icon-up.svg" alt="">
+              <p class="value-icon-label text-lime-green">553%</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card-label">
+            <p class="card-label-p">Likes</p>
+            <img src="./src/images/icon-youtube.svg" alt="youtube" class="icon">
+          </div>
+          <div class="value">
+            <p class="value-label">107</p>
+            <div class="value-icon">
+              <img src="./src/images/icon-down.svg" alt="">
+              <p class="value-icon-label text-red-500">19%</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card-label">
+            <p class="card-label-p">Total Views</p>
+            <img src="./src/images/icon-youtube.svg" alt="youtube" class="icon">
+          </div>
+          <div class="value">
+            <p class="value-label">1407</p>
+            <div class="value-icon">
+              <img src="./src/images/icon-up.svg" alt="">
+              <p class="value-icon-label text-lime-green">12%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="./src/js/index.js"></script>
+</body>
+</html>

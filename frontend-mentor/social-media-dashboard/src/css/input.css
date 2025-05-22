@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* bg-Light-Grayish-Blue flex  justify-between flex-col items-center p-5 gap-3 rounded-md */
+
+@layer components {
+    .card-dashboard {
+        width: 250px;
+        background-color: theme('colors.Light-Grayish-Blue');
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+        border-radius: 5px;
+        @apply dark:bg-CardBg-Dark-Desaturated-Blue hover:bg-slate-300 dark:hover:bg-CardBg-Dark-Desaturated-Blue-hover hover:cursor-pointer
+    }
+
+    .icon {
+        width: 15px;
+    }
+
+    .username {
+        @apply flex items-center gap-1
+    }
+
+    .username-label {
+        @apply text-[0.5rem] font-semibold text-slate-600
+    }
+
+    .follower {
+        @apply flex flex-col justify-center items-center
+    }
+
+    .follower-count {
+        @apply text-4xl font-bold dark:text-white
+    }
+
+    .follower-label {
+        @apply uppercase text-[0.5rem] tracking-[5px] text-Dark-Grayish-Blue
+    }
+
+    .today {
+        @apply  flex justify-center items-center gap-1
+    }
+
+    .today-label {
+        @apply text-[0.5rem] font-bold text-lime-green
+    }
+
+    .card {
+        @apply w-[250px] bg-Light-Grayish-Blue flex justify-between flex-col items-center p-5 gap-3 rounded-md  dark:bg-CardBg-Dark-Desaturated-Blue hover:bg-slate-300 dark:hover:bg-CardBg-Dark-Desaturated-Blue-hover hover:cursor-pointer
+    }
+
+    .card-label {
+        @apply w-full flex flex-row justify-between items-center 
+    }
+
+    .card-label-p {
+        @apply text-[0.6rem] font-semibold text-Dark-Grayish-Blue capitalize
+    }
+
+    .value {
+        @apply w-full flex flex-row justify-between items-center
+    }
+
+    .value-label {
+        @apply text-xl font-bold dark:text-white
+    }
+
+    .value-icon {
+        @apply flex justify-center items-center gap-1
+    }
+
+    .value-icon-label {
+        @apply text-[0.5rem] font-bold
+    }
+
+    .active {
+        transform: translateX(20px);
+    }
+}

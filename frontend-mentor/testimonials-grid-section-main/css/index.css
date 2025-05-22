@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+/* :root{
+	font-size: 13px;
+} */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	min-height: 150vh;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.main {
+	margin: auto;
+	width: 1000px;
+	max-width: 1440px;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+/* card */
+	.main .card {
+		display: grid;
+		grid-template-areas :
+							"card1 card1 card2 card5"
+							"card3 card4 card4 card5";
+		grid-template-columns: repeat(4, 1fr);;
+		grid-gap :1.5rem;
+	}
+
+	.card-header {
+		display: grid;
+		grid-template-areas: 
+							"img name"
+							"img status";
+		grid-template-columns: 35px 1fr;
+		grid-template-rows: 20px;
+		padding-bottom: 20px;
+		font-size: 13px;
+		font-size: smaller;
+	}
+
+	.card-header .head-img {
+		grid-area: img;
+		display: flex;
+		justify-content: start;
+		align-items: center;
+	}
+
+	.card-header .head-name {
+		grid-area: name;
+	}
+
+	.card-header .head-status {
+		grid-area: status;
+		opacity: 50%;
+	}
+
+	.card-tweet {
+		padding-bottom: 20px;
+		z-index: 1;
+		position: relative;
+		font-size: 18px;
+	}
+
+	.card-full-tweet {
+		font-size: 13px;
+		line-height: 1.5;
+		opacity: 70%;
+	}
+
+	.card > * {
+		padding: 1.5rem;
+	}
+
+	/* card1 */
+		.card .card1 {
+			border-radius: 10px;
+			background-color: hsl(263, 55%, 52%);
+			color: hsl(0, 0%, 100%);
+			grid-area : card1;
+			box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+			position: relative;
+		}
+		.card .card1 .card-header > .head-img  > img{
+			border:2px solid hsl(263, 67%, 60%);
+		}
+	/* card1 */
+
+	/* card2 */
+		.card .card2 {
+			border-radius: 10px;
+			background-color: hsl(217, 19%, 35%);
+			color: hsl(0, 0%, 100%);
+			grid-area : card2;
+			box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+		}
+	/* card2 */
+
+	/* card3 */
+		.card .card3 {
+			border-radius: 10px;
+			background-color:  hsl(0, 0%, 100%);
+			color: hsl(219, 29%, 14%);
+			grid-area : card3;
+			box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+		}
+	/* card3 */
+
+	/* card4 */
+		.card .card4 {
+			border-radius: 10px;
+			background-color: hsl(219, 29%, 14%);
+			color: hsl(0, 0%, 100%);
+			box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+			grid-area : card4;
+		}
+		/* card4 */
+		
+		/* card5 */
+		.card .card5 {
+			border-radius: 10px;
+			background-color:  hsl(0, 0%, 100%);
+			color: hsl(219, 29%, 14%);
+			box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+			grid-area : card5;
+		}
+
+		.card .card4 img{
+			border:2px solid hsl(263, 55%, 52%);
+		}
+	/* card5 */
+
+/* card */
+
+.head-img > img {
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+}
+
+.card1 > img{
+	position: absolute;
+	height: 115px;
+	aspect-ratio: 104/102;
+	top:0;
+	right: 0;
+	transform: translateX(-75%);
+}
+
+
+@media(width < 900px) {
+	.main {
+		min-width: 303px;
+	}
+	.main .card {
+		display: grid;
+		grid-template-areas:
+							"card1"
+							"card2"
+							"card3"
+							"card4"
+							"card5";
+
+		grid-template-columns: auto;
+		grid-gap :2rem;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		padding: 20px;
+	}
+
+	.card1 > img{
+		position: absolute;
+		height: 115px;
+		aspect-ratio: 104/102;
+		top:0;
+		right: 0;
+		transform: translateX(-19%);
+	}
+}

@@ -1,0 +1,103 @@
+.banner{
+	margin-top: 0px;
+}
+
+.banner .banner-detail {
+	background-color: hsl(256, 26%, 20%);
+	color: white;
+	margin: 0px;
+	padding: 80px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: relative;
+}
+
+.banner .banner-detail h1 {
+	font-size: 3rem;
+	margin-bottom: 20px;
+	z-index:1;
+}
+
+.banner .banner-detail p {
+	line-height: 2;
+}
+
+.banner .banner-detail .orm-left {
+	position: absolute;
+	left: 0;
+	transform: translate(0%, -100%);
+}
+
+.banner .banner-detail .orm-right {
+	position: absolute;
+	right: 0;
+	transform: translate(0%, 77%);
+}
+
+/* @media (width > 1440px) {
+	div .banner {
+		height: 28vh;
+	}
+}
+
+div .banner {
+	background-color: hsl(256, 26%, 20%);
+	
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+
+div .banner  {
+	padding : 14px 188px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+div .banner .banner-detail .banner-line {
+	width: 150px;
+	height: 2px;
+	background-color: white;
+	margin-bottom: 31px;
+}
+
+
+div .banner .image-banner {
+	height: 723px;
+	transform: translate(0px, 20%);
+}
+
+div .banner h1 {
+	font-size: 7em;
+}
+
+div .banner .banner-detail {
+	line-height: 1;
+	text-indent: 2px;
+	width: 50%;
+}
+
+div .banner .banner-detail p{
+	line-height: 2;
+	font-size: 1.5em;
+}
+
+				
+div .banner .orm-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	height: 700px;
+}
+
+div .banner .orm-left {
+	position: absolute;
+	left: 0;
+	transform: translateY(557px);
+} */
