@@ -65,7 +65,6 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 16px 20px 16px 20px;
 }
 
 main {
@@ -131,13 +130,14 @@ main > .hero > .images {
 	background: linear-gradient(#FF6F48, #F02AA6)
 }
 
-.hero > .images > img {
-	width: 325px;
+.hero-mobile {
+	width: 372px;
 }
 
 .content {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	gap: 5rem;
 }
 
@@ -215,6 +215,11 @@ footer > button {
 }
 
 @media (width >= 768px) {
+	main {
+		padding: 40px;
+		overflow: hidden;
+	}
+
 	main > .hero {
 		flex-direction: row;
 	}
@@ -223,8 +228,13 @@ footer > button {
 		width: 50%;
 	}
 
+	main > .hero > .images {
+		width: 20%;
+	}
+
 	.hero-tablet {
 		display: block;
+		transform: translate(227px, -254px);
 	}
 
 	.hero-mobile {
@@ -244,5 +254,25 @@ footer > button {
 
 	.content > .card {
 		margin-bottom: 4rem;
+	}
+}
+
+@media (width >= 1024px) {
+	main {
+		padding: 24px 80px;
+		position: relative;
+	}
+
+	nav {
+		z-index: 100;
+	}
+
+	main > .hero > .text >  h1 {
+		font-size: 3.3rem;
+	}
+
+	.hero-desktop {
+		z-index: 1;
+		position: absolute;
 	}
 }
