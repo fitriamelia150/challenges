@@ -24,11 +24,11 @@ const ProductImagesLayout = () => {
 
     return (
         <>
-            {/* mobile */}
+            {/* mobile , tablet*/}
             <ProductImage images={images} indexImages={indexImages} handleButtonImage={handleButtonImage}/>
             {/* desktop */}
             <ProductImages images={images} imagesThumb={imagesThumb} indexImages={indexImages} setIndexImages={setIndexImages}/>
-            <ProductImagesPopup images={images} imagesThumb={imagesThumb} indexImages={indexImages} setIndexImages={setIndexImages}/>
+            {/* <ProductImagesPopup images={images} imagesThumb={imagesThumb} indexImages={indexImages} setIndexImages={setIndexImages}/> */}
         </>
     )
 }

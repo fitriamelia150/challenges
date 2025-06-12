@@ -1,5 +1,3 @@
-import Sidebar from "../components/Fragments/Sidebar"
-import CartLayout from "../components/Layouts/CartLayout"
 import ProductImagesLayout from "../components/Layouts/ProductImagesLayout"
 import ProductDetail from "../components/Fragments/ProductDetail"
 
@@ -14,11 +12,9 @@ const data = {
 const ProductPage = () => {
 
     return (
-        <div className="md:flex items-center justify-center gap-10 md:px-10">
+        <div className="flex flex-col items-center justify-center lg:flex-row lg:gap-32"> 
             <ProductImagesLayout/>
             <ProductDetail data={data}/>
-            <CartLayout/>
-            <Sidebar/>
         </div>
     )
 }

@@ -3,9 +3,11 @@ const ProductImage = (props) => {
     
     return (
         <>
-            <div className="relative md:hidden">
-                <div className="w-full h-72 bg-cyan-400 overflow-hidden">
-                    <img src={images[indexImages]} alt="image-product" />
+            <div className="relative lg:hidden w-full md:mb-12">
+                <div className="">
+                    <div className="w-full h-[300px] overflow-hidden md:rounded-lg">
+                        <img src={images[indexImages]} alt="image-product" className="w-full h-full object-cover"/>
+                    </div>
 
                     <div className="px-5 flex w-full justify-between absolute top-0 translate-y-28">
                         <img src="/images/icon-previous.svg" alt="icon-previous" className="w-10 h-10 p-3 bg-white rounded-full" onClick={()=>handleButtonImage('prev')}/>
