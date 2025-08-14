@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	font-family: sans-serif;
+	min-width: 375px;
 }
 ol, ul {
 	list-style: none;
@@ -97,11 +98,11 @@ main > .hero {
 	flex-direction: column;
 }
 
-main > .hero > .images {
+/* main > .hero > .images {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
+} */
 
 .hero {
 	margin-top: 5rem;
@@ -132,6 +133,12 @@ main > .hero > .images {
 
 .hero-mobile {
 	width: 372px;
+}
+
+.hero-image {
+	width: 100%;
+	height: auto;
+	display: block;
 }
 
 .content {
@@ -215,6 +222,7 @@ footer > button {
 }
 
 @media (width >= 768px) {
+	
 	main {
 		padding: 40px;
 		overflow: hidden;
@@ -222,26 +230,21 @@ footer > button {
 
 	main > .hero {
 		flex-direction: row;
+		margin-bottom: 10rem;
 	}
 
-	main > .hero > .text {
-		width: 50%;
-	}
+	/* .hero-image {
+		width: 250%;
+		transform: translate(-237px, -207px);
+	} */
 
-	main > .hero > .images {
-		width: 20%;
-	}
-
-	.hero-tablet {
+	/* .hero-tablet {
 		display: block;
 		transform: translate(227px, -254px);
-	}
-
-	.hero-mobile {
-		display: none;
-	}
+	} */
 
 	.content {
+		align-items: baseline;
 		flex-direction: row;
 		justify-content: space-around;
 		flex-wrap: wrap;
@@ -255,17 +258,32 @@ footer > button {
 	.content > .card {
 		margin-bottom: 4rem;
 	}
+
+	/* .images {
+		height: 300px;
+		transform: translate(144px, -43px);
+	} */
 }
 
-@media (width >= 1024px) {
+@media (width >= 1044px) {
 	main {
-		padding: 24px 80px;
+		padding: 24px 144px;
 		position: relative;
 	}
 
 	nav {
 		z-index: 100;
+		margin-bottom: 10rem;
 	}
+
+	.hero {
+		align-items: center;
+	}
+
+	/* .hero-image {
+		width: 250%;
+		transform: translate(-237px, -429px);
+	} */
 
 	main > .hero > .text >  h1 {
 		font-size: 3.3rem;

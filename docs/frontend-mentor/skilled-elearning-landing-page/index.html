@@ -25,11 +25,11 @@
         <button>get started</button>
       </div>
 
-      <div class="images">
-        <img src="./assets/image-hero-mobile.webp" alt="hero-img" class="hero-mobile">
-        <img src="./assets/image-hero-tablet.webp" alt="hero-img" class="hero-tablet">
-        <img src="./assets/image-hero-desktop.webp" alt="hero-img" class="hero-desktop">
-      </div>
+      <picture class="images">
+        <source media="(min-width:1024px)" srcset="./assets/image-hero-desktop.webp">
+        <source media="(min-width:768px)" srcset="./assets/image-hero-tablet.webp">
+        <img src="./assets/image-hero-mobile.webp" alt="hero-img" class="hero-image">
+      </picture>
     </section>
 
     <section class="content">
@@ -78,6 +78,7 @@
       </div>
     </section>
   </main>
+
   <footer>
     <img src="./assets/logo-light.svg" alt="logo-light">
     <button>get started</button>
